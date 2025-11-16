@@ -4,7 +4,7 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <>
-    <section className="relative w-full min-h-[40vh] md:min-h-[80vh] flex flex-col bg-white">
+    <section className="relative w-full min-h-[20vh] md:min-h-[90vh] flex flex-col bg-white">
     {/* Background Image - Responsive Height */}
 
     <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
@@ -29,7 +29,7 @@ const AboutSection = () => {
     </div>
   </section>
 
-    <section className="relative w-full min-h-[40vh] md:min-h-[80vh] flex flex-col bg-white mb-10">
+    <section className="relative w-full min-h-[20vh] md:min-h-[80vh] flex flex-col bg-white mb-10">
         {/* Background Image - Responsive Height */}
         <div className="relative w-full flex-1 min-h-[160px] sm:min-h-[250px] md:min-h-0">
         <Image

@@ -25,22 +25,22 @@ const Partners = () => {
       {/* Headline */}
       <div className="w-full text-center mt-8 md:mt-10 md:mb-8 z-10 px-4 mb-14">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
-        Partners & Associates.
+          Partners & Associates.
         </h1>
       </div>
       {/* Partner Logos */}
-      <div className="flex flex-row flex-wrap justify-center gap-12 items-center w-full px-4">
+      <div className="flex flex-row flex-wrap justify-center gap-6 sm:gap-10 items-center w-full px-2 sm:px-4">
         {partnersData.map((partner, idx) => (
           <div
             key={partner.name}
-            className="bg-white rounded-xl shadow-lg p-6 flex items-center justify-center w-[260px] h-[180px] min-w-[220px] min-h-[140px]"
+            className="bg-white rounded-xl shadow-lg p-3 sm:p-6 flex items-center justify-center w-[110px] h-[56px] sm:w-[220px] sm:h-[120px] min-w-[90px] min-h-[48px] transition-all"
           >
             <Image
               src={partner.logo}
               alt={partner.alt}
-              width={220}
-              height={120}
-              className="object-contain"
+              width={90}
+              height={50}
+              className="object-contain sm:w-[230px] sm:h-[150px]"
               priority={idx === 0}
               unoptimized={partner.logo.startsWith("http")}
             />

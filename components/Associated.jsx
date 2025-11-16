@@ -5,7 +5,7 @@ import Image from "next/image";
 
 const Journey = () => {
   return (
-    <section className="relative w-full min-h-[40vh] md:min-h-[85vh] flex flex-col bg-white">
+    <section className="relative w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-white">
       {/* Headline - Responsive spacing and font size */}
       <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">

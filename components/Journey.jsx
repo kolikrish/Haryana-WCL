@@ -5,15 +5,15 @@ import Image from "next/image";
 
 const Journey = () => {
   return (
-    <section className="relative w-full min-h-[40vh] md:min-h-[85vh] flex flex-col bg-white">
+    <section className="relative w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-white">
       {/* Headline - Responsive spacing and font size */}
-      <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
+      <div className="w-full text-center mt-8 md:mt-14 md:mb-6 z-10 px-4 mb-4">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
             The Journey Begins
         </h1>
       </div>
       {/* Background Image - Responsive Height */}
-      <div className="relative w-full flex-1 min-h-[160px] sm:min-h-[250px] md:min-h-0">
+      <div className="relative w-full flex-1 min-h-[80px] sm:min-h-[160px] md:min-h-0">
         <Image
           src="/assets/Journey.jpg"
           alt="Associated Countries"
