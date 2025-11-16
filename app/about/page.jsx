@@ -1,52 +1,67 @@
-"use client";
+"use client"
 
-import ComingSoon from "@/components/ComingSoon";
+import React from "react";
 import Image from "next/image";
-import React, { useState, useEffect } from "react";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation, Pagination, Autoplay } from "swiper/modules";
 
-// Use public/assets paths if images not found, or fix the path.
-const images = [
-  "/assets/AboutBanner1.jpg",
-  "/assets/AboutBanner2.jpg",
-];
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import ComingSoon from "@/components/ComingSoon";
 
-export default function Page() {
-  const [index, setIndex] = useState(0);
-
-  useEffect(() => {
-    if (images.length <= 1) return; // Don't animate if only one image or none
-    const timer = setInterval(() => {
-      setIndex((prev) => (prev + 1) % images.length);
-    }, 4000);
-
-    return () => clearInterval(timer);
-  }, []);
-
+const Hero = () => {
   return (
     <div>
-    <div className="relative w-full h-[60vh] md:h-[75vh] overflow-hidden">
-      {/* Images */}
-      {images.map((img, i) => (
-        <div
-          key={i}
-          className={`absolute inset-0 w-full h-full transition-opacity duration-700 ${
-            i === index ? "opacity-100 z-10" : "opacity-0 z-0"
-          }`}
-          style={{ pointerEvents: i === index ? "auto" : "none" }}
+    <section className="relative w-full overflow-hidden h-[25vh] lg:h-[70vh]">
+      {/* Background Image Carousel */}
+      <div className="absolute inset-0 w-full h-full z-0">
+        <Swiper
+          modules={[Navigation, Pagination, Autoplay]}
+          spaceBetween={0}
+          slidesPerView={1}
+          navigation
+          pagination={{ clickable: true }}
+          autoplay={{ delay: 3000 }}
+          loop={true}
+          className="w-full h-full"
         >
-          <Image
-            src={img}
-            alt={`About slider image ${i + 1}`}
-            fill
-            className="object-cover"
-            priority={i === 0}
-          />
-        </div>
-      ))}
-    </div>
+          {/* Slide 1 */}
+          <SwiperSlide className="relative w-full h-full">
+            <div className="relative w-full h-full">
+              <Image
+                src="/assets/AboutBanner1.jpg"
+                alt="Banner 1"
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+            </div>
+          </SwiperSlide>
+
+          {/* Slide 2 */}
+          <SwiperSlide className="relative w-full h-full">
+            <div className="relative w-full h-full">
+              <Image
+                src="/assets/AboutBanner2.jpg"
+                alt="Banner 2"
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+            </div>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </section>
 
     <ComingSoon />
 
     </div>
   );
-}   
+};
+
+export default Hero;
