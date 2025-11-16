@@ -24,7 +24,7 @@ const Partners = () => {
     <section className="relative flex flex-col items-center bg-white py-8 mb-20">
       {/* Headline */}
       <div className="w-full text-center mt-8 md:mt-10 md:mb-8 z-10 px-4 mb-14">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold md:font-medium text-black drop-shadow-lg">
+        <h1 className="text-2xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
         Partners & Associates.
         </h1>
       </div>
