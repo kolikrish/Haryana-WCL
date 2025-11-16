@@ -25,7 +25,7 @@ const Partners = () => {
       {/* Headline */}
       <div className="w-full text-center mt-8 md:mt-10 md:mb-8 z-10 px-4 mb-14">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold md:font-medium text-black drop-shadow-lg">
-          The Journey Begins.
+        Partners & Associates.
         </h1>
       </div>
       {/* Partner Logos */}
