@@ -28,7 +28,7 @@ const Navbar = () => {
       </div>
 
       {/* Navbar */}
-      <div className="max-w-7xl mx-auto px-4 py-10 flex justify-between items-center">
+      <div className="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center">
         {/* Logo */}
         <a href="/" aria-label="Home">
           <Image src="/assets/logo.png" alt="Logo" width={68} height={68} />

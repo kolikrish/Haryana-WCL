@@ -6,8 +6,8 @@ const AppBanner = () => {
     <section className="relative flex flex-col items-center bg-white py-6 md:py-12">
       {/* Headline - Responsive font sizes and spacing */}
       <div className="w-full text-center mt-8 md:mt-10 mb-4 md:mb-8 z-10 px-4">
-        <h1 className="text-2xl sm:text-3xl md:text-5xl font-semibold md:font-medium text-black drop-shadow-lg">
-          The Journey Begins.
+        <h1 className="text-3xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
+          IWKL App
         </h1>
       </div>
       {/* Responsive image container */}

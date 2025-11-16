@@ -40,7 +40,7 @@ const page = () => {
               />
               {/* Headline overlay */}
               <div className="absolute inset-0 flex items-center justify-center z-10">
-                <h1 className="text-3xl md:text-5xl font-bold text-white drop-shadow-lg bg-opacity-30 px-8 py-3 rounded">
+                <h1 className="text-3xl md:text-5xl font-[Koba] text-white drop-shadow-lg bg-opacity-30 px-8 py-3 rounded">
                   Franchise
                 </h1>
               </div>
@@ -50,7 +50,7 @@ const page = () => {
       </div>
     </section>
 
-    <ComingSoon />
+    <ComingSoon title={"Franchise Page Coming Soon."}/>
 
     </div>
     
