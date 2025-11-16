@@ -21,7 +21,7 @@ import Image from "next/image";
 
 const Partners = () => {
   return (
-    <section className="relative flex flex-col items-center bg-white py-8 mb-20">
+    <section className="relative flex flex-col items-center bg-[#f1f1f1] py-8 pb-20">
       {/* Headline */}
       <div className="w-full text-center mt-8 md:mt-10 md:mb-8 z-10 px-4 mb-14">
         <h1 className="text-2xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
