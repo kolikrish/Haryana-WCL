@@ -8,9 +8,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#200040] text-white shadow-md">
+    <nav className="w-full bg-[#510043] text-white shadow-md">
       {/* Top Scrolling Text */}
-      <div className="bg-[#2d003d] py-2 text-sm overflow-x-hidden whitespace-nowrap">
+      <div className="bg-[#510043] py-2 text-sm overflow-x-hidden whitespace-nowrap">
         <div className="inline-block animate-marquee">
             Mega Launch event Coming Soon.
         </div>
@@ -22,7 +22,7 @@ const Navbar = () => {
           .animate-marquee {
             display: inline-block;
             min-width: 100%;
-            animation: marquee 18s linear infinite;
+            animation: marquee 20s linear infinite;
           }
         `}</style>
       </div>
@@ -84,7 +84,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-[#200040] px-6 py-4 space-y-4 text-sm font-medium tracking-wide">
+        <div className="md:hidden bg-[#510043] px-6 py-4 space-y-4 text-sm font-medium tracking-wide">
           <a href="/about" className="block hover:text-gray-300">ABOUT US</a>
           <a href="/team" className="block hover:text-gray-300">TEAM</a>
           <a href="/matches" className="block hover:text-gray-300">MATCHES</a>
