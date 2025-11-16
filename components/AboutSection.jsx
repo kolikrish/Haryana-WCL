@@ -4,14 +4,14 @@ import React from 'react'
 const AboutSection = () => {
   return (
     <>
-    <section className="relative w-full min-h-[20vh] md:min-h-[90vh] flex flex-col bg-white">
+    <section className="relative w-full min-h-[20vh] md:min-h-[70vh] flex flex-col bg-white mt-10">
     {/* Background Image - Responsive Height */}
 
-    <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
+    {/* <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
         <h1 className="text-3xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
             About Us
         </h1>
-    </div>
+    </div> */}
 
 
 
