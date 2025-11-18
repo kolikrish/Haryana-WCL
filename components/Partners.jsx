@@ -2,8 +2,8 @@ import React from 'react'
 
 // NOTE: next/image does not support external URLs unless configured in next.config.js.
 // For static/demo purposes, let's use placeholder images or local static assets.
-
 // Example: Replace these paths with the ACTUAL static assets you have in /public/assets
+
 const partnersData = [
   {
     name: "Partner One",

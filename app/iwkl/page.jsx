@@ -12,27 +12,27 @@ const tvCategories = {
   'Best Raids & Tackles of the Season': [
     { 
       video: '/assets/video/vid1.mp4',
-      thumbnail: '/assets/video/thumb1.JPG'
+      thumbnail: '/assets/video/thumb1.jpg'
     },
     { 
       video: '/assets/video/vid2.mp4',
-      thumbnail: '/assets/video/thumb1.JPG'
+      thumbnail: '/assets/video/thumb1.jpg'
     },
     { 
       video: '/assets/video/vid3.mp4',
-      thumbnail: '/assets/video/thumb1.JPG'
+      thumbnail: '/assets/video/thumb1.jpg'
     },
     { 
       video: '/assets/video/vid4.mp4',
-      thumbnail: '/assets/video/thumb1.JPG'
+      thumbnail: '/assets/video/thumb1.jpg'
     },
     { 
       video: '/assets/video/vid5.mp4',
-      thumbnail: '/assets/video/thumb1.JPG'
+      thumbnail: '/assets/video/thumb1.jpg'
     },
     { 
       video: '/assets/video/vid6.mp4',
-      thumbnail: '/assets/video/thumb1.JPG'
+      thumbnail: '/assets/video/thumb1.jpg'
     },
   ],
 };
