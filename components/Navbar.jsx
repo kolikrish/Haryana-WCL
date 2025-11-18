@@ -9,9 +9,9 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-[#59065F] text-white shadow-md">
+    <nav className="w-full bg-[#300834] text-white shadow-md">
       {/* Top Scrolling Text */}
-      <div className="bg-[#300834] py-2 text-sm overflow-x-hidden whitespace-nowrap">
+      <div className="bg-[#59065F] py-2 text-sm overflow-x-hidden whitespace-nowrap">
         <div className="inline-block animate-marquee">
             Mega Launch event Coming Soon.
         </div>
