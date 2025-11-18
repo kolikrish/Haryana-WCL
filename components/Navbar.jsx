@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -30,51 +31,51 @@ const Navbar = () => {
       {/* Navbar */}
       <div className="max-w-7xl mx-auto px-4 py-8 flex justify-between items-center">
         {/* Logo */}
-        <a href="/" aria-label="Home">
+        <Link href="/" aria-label="Home">
           <Image src="/assets/logo.png" alt="Logo" width={68} height={68} />
-        </a>
+        </Link>
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
           <li>
-            <a href="/about" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/about" className="hover:text-gray-300 cursor-pointer">
               ABOUT US
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/team" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/team" className="hover:text-gray-300 cursor-pointer">
               TEAM
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/matches" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/matches" className="hover:text-gray-300 cursor-pointer">
               MATCHES
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/gallery" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/gallery" className="hover:text-gray-300 cursor-pointer">
               GALLERY
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/iwkl" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/iwkl" className="hover:text-gray-300 cursor-pointer">
               IWKLTV
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/stats" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/stats" className="hover:text-gray-300 cursor-pointer">
               STATS
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/news" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/news" className="hover:text-gray-300 cursor-pointer">
               NEWS
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/franchise" className="hover:text-gray-300 cursor-pointer">
+            <Link href="/franchise" className="hover:text-gray-300 cursor-pointer">
               FRANCHISE
-            </a>
+            </Link>
           </li>
         </ul>
 
@@ -90,14 +91,14 @@ const Navbar = () => {
       {/* Mobile Menu */}
       {open && (
         <div className="md:hidden bg-[#510043] px-6 py-4 space-y-4 text-sm font-medium tracking-wide">
-          <a href="/about" className="block hover:text-gray-300">ABOUT US</a>
-          <a href="/team" className="block hover:text-gray-300">TEAM</a>
-          <a href="/matches" className="block hover:text-gray-300">MATCHES</a>
-          <a href="/gallery" className="block hover:text-gray-300">GALLERY</a>
-          <a href="/iwkl" className="block hover:text-gray-300">IWKLTV</a>
-          <a href="/stats" className="block hover:text-gray-300">STATS</a>
-          <a href="/news" className="block hover:text-gray-300">NEWS</a>
-          <a href="/franchise" className="block hover:text-gray-300">FRANCHISE</a>
+          <Link href="/about" className="block hover:text-gray-300">ABOUT US</Link>
+          <Link href="/team" className="block hover:text-gray-300">TEAM</Link>
+          <Link href="/matches" className="block hover:text-gray-300">MATCHES</Link>
+          <Link href="/gallery" className="block hover:text-gray-300">GALLERY</Link>
+          <Link href="/iwkl" className="block hover:text-gray-300">IWKLTV</Link>
+          <Link href="/stats" className="block hover:text-gray-300">STATS</Link>
+          <Link href="/news" className="block hover:text-gray-300">NEWS</Link>
+          <Link href="/franchise" className="block hover:text-gray-300">FRANCHISE</Link>
         </div>
       )}
     </nav>

@@ -5,6 +5,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import BannerComponent from '@/components/BannerComponent';
 import { useState, useRef, useEffect } from 'react';
+import Image from "next/image";
 
 // Video data (single category for now)
 const tvCategories = {
@@ -86,11 +87,11 @@ const Page = () => {
       if (currentlyPlaying !== videoId && isPlaying) {
         setIsPlaying(false);
       }
-    }, [currentlyPlaying, isPlaying, videoId]);
+    }, [isPlaying, videoId]);
 
     return (
       <div
-        className="relative bg-black rounded-xl shadow-2xl overflow-hidden group aspect-[9/16] cursor-pointer"
+        className="relative bg-black rounded-xl shadow-2xl overflow-hidden group aspect-9/16 cursor-pointer"
         onMouseEnter={() => setShowControls(true)}
         onMouseLeave={() => setShowControls(false)}
       >
@@ -139,7 +140,7 @@ const Page = () => {
         {!isPlaying && !hasError && (
           <div className="absolute inset-0 z-10">
             {/* Example using standard <img> with imported fallback in /public */}
-            <img
+            <Image
               src={item.thumbnail}
               alt={`Video Thumbnail ${index + 1}`}
               className="w-full h-full object-cover"
@@ -210,7 +211,7 @@ const Page = () => {
       {[...Array(4)].map((_, index) => (
         <div 
           key={index}
-          className="bg-gray-200 rounded-xl shadow-xl overflow-hidden aspect-[9/16] animate-pulse"
+          className="bg-gray-200 rounded-xl shadow-xl overflow-hidden aspect-9/16 animate-pulse"
         >
           <div className="w-full h-full bg-gray-300 flex items-center justify-center">
             <div className="text-gray-400">Loading Video...</div>
