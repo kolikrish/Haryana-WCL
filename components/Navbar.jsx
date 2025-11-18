@@ -10,7 +10,7 @@ const Navbar = () => {
   return (
     <nav className="w-full bg-[#59065F] text-white shadow-md">
       {/* Top Scrolling Text */}
-      <div className="bg-[#59065F] py-2 text-sm overflow-x-hidden whitespace-nowrap">
+      <div className="bg-[#300834] py-2 text-sm overflow-x-hidden whitespace-nowrap">
         <div className="inline-block animate-marquee">
             Mega Launch event Coming Soon.
         </div>
@@ -52,8 +52,13 @@ const Navbar = () => {
             </a>
           </li>
           <li>
-            <a href="/photos" className="hover:text-gray-300 cursor-pointer">
-              PHOTOS
+            <a href="/gallery" className="hover:text-gray-300 cursor-pointer">
+              GALLERY
+            </a>
+          </li>
+          <li>
+            <a href="/iwkl" className="hover:text-gray-300 cursor-pointer">
+              IWKLTV
             </a>
           </li>
           <li>
@@ -88,7 +93,8 @@ const Navbar = () => {
           <a href="/about" className="block hover:text-gray-300">ABOUT US</a>
           <a href="/team" className="block hover:text-gray-300">TEAM</a>
           <a href="/matches" className="block hover:text-gray-300">MATCHES</a>
-          <a href="/photos" className="block hover:text-gray-300">PHOTOS</a>
+          <a href="/gallery" className="block hover:text-gray-300">GALLERY</a>
+          <a href="/iwkl" className="block hover:text-gray-300">IWKLTV</a>
           <a href="/stats" className="block hover:text-gray-300">STATS</a>
           <a href="/news" className="block hover:text-gray-300">NEWS</a>
           <a href="/franchise" className="block hover:text-gray-300">FRANCHISE</a>

@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Journey = () => {
   return (
-    <section className="relative w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-white">
+    <section className="relative w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-[#f1f1f1]">
       {/* Headline - Responsive spacing and font size */}
       <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
-        <h1 className="text-3xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
+        <h1 className="text-4xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
           Countries Associated
         </h1>
       </div>
@@ -22,8 +22,6 @@ const Journey = () => {
           priority
           sizes="100vw"
         />
-        {/* Optional: Overlay for readability on mobile */}
-        <div className="absolute inset-0 bg-black/10 md:bg-transparent" />
       </div>
     </section>
   );

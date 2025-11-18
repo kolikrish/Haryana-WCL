@@ -1,28 +1,30 @@
-import React from 'react'
-import Image from "next/image"
+"use client";
 
-const AppBanner = () => {
+import React from 'react';
+import Image from "next/image";
+
+const FanClub = () => {
   return (
-    <section className="relative flex flex-col items-center bg-white py-6 md:py-12">
-      {/* Headline - Responsive font sizes and spacing */}
-      <div className="w-full text-center mt-8 md:mt-10 mb-4 md:mb-8 z-10 px-4">
-        <h1 className="text-3xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
+    <section className="relative w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-[#f1f1f1] mb-0">
+      {/* Headline - Responsive spacing and font size */}
+      <div className="w-full text-center mt-14 md:mt-14 md:mb-6 z-10 px-4 mb-8">
+        <h1 className="text-4xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
           IWKL App
         </h1>
       </div>
-      {/* Responsive image container */}
-      <div className="relative w-full max-w-[95vw] sm:max-w-2xl md:max-w-4xl lg:max-w-6xl h-[180px] sm:h-[250px] md:h-[320px] lg:h-[55vh] min-h-[120px] rounded-xl overflow-hidden shadow-md transition-all duration-300">
+      {/* Background Image - Responsive Height */}
+      <div className="relative w-full flex-1 min-h-[160px] sm:min-h-[250px] md:min-h-0">
         <Image
           src="/assets/APPComingSoonBanner.jpg"
-          alt="Fan Club"
+          alt="IWKL APP COMING SOON"
           fill
           className="object-cover"
           priority
-          sizes="(max-width: 640px) 95vw, (max-width: 900px) 90vw, 768px"
+          sizes="100vw"
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default AppBanner;
+export default FanClub;

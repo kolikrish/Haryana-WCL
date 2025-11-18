@@ -77,7 +77,7 @@ export default function Footer() {
 
           {/* Left Side Text */}
           <p className="text-[#d8badc] text-sm tracking-widest text-center md:text-left">
-            © COPYRIGHT–2024. ALL RIGHTS RESERVED. | MANAGED BY SPACOR SPORTS PVT LTD
+            © COPYRIGHT–2024. ALL RIGHTS RESERVED. | DESIGNED BY VERNIX PVT LTD
           </p>
 
           {/* Right Icons */}
