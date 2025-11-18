@@ -7,14 +7,14 @@ import React from 'react'
 const partnersData = [
   {
     name: "Partner One",
-    logo: "/assets/partners.webp",
+    logo: "/assets/partner.png",
     alt: "Partner One Logo",
   },
-  {
-    name: "Partner Two",
-    logo: "/assets/partners.webp",
-    alt: "Partner Two Logo",
-  }
+  // {
+  //   name: "Partner Two",
+  //   logo: "/assets/partners.webp",
+  //   alt: "Partner Two Logo",
+  // }
 ];
 
 import Image from "next/image";
@@ -33,7 +33,7 @@ const Partners = () => {
         {partnersData.map((partner, idx) => (
           <div
             key={partner.name}
-            className="bg-white rounded-xl shadow-lg p-3 sm:p-6 flex items-center justify-center w-[110px] h-[56px] sm:w-[220px] sm:h-[120px] min-w-[90px] min-h-[48px] transition-all"
+            className="bg-black rounded-xl shadow-lg p-3 sm:p-6 flex items-center justify-center w-[110px] h-[56px] sm:w-[220px] sm:h-[120px] min-w-[90px] min-h-[48px] transition-all"
           >
             <Image
               src={partner.logo}

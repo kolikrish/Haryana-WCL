@@ -25,7 +25,7 @@ const BannerComponent = ({title}) => {
           <SwiperSlide className="relative w-full h-full">
             <div className="relative w-full h-full">
               <Image
-                src="/assets/HeroBanner1.jpg"
+                src="/assets/PagesBanner.png"
                 alt="Banner 1"
                 fill
                 className="object-cover"

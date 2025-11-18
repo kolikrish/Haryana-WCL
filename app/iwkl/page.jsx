@@ -11,19 +11,27 @@ import Image from "next/image";
 const tvCategories = {
   'Best Raids & Tackles of the Season': [
     { 
-      video: '/assets/video/cpklvid1.mp4',
+      video: '/assets/video/vid1.mp4',
       thumbnail: '/assets/video/thumb1.JPG'
     },
     { 
-      video: '/assets/video/cpklvid1.mp4',
+      video: '/assets/video/vid2.mp4',
       thumbnail: '/assets/video/thumb1.JPG'
     },
     { 
-      video: '/assets/video/cpklvid1.mp4',
+      video: '/assets/video/vid3.mp4',
       thumbnail: '/assets/video/thumb1.JPG'
     },
     { 
-      video: '/assets/video/cpklvid1.mp4',
+      video: '/assets/video/vid4.mp4',
+      thumbnail: '/assets/video/thumb1.JPG'
+    },
+    { 
+      video: '/assets/video/vid5.mp4',
+      thumbnail: '/assets/video/thumb1.JPG'
+    },
+    { 
+      video: '/assets/video/vid6.mp4',
       thumbnail: '/assets/video/thumb1.JPG'
     },
   ],
@@ -144,6 +152,7 @@ const Page = () => {
               src={item.thumbnail}
               alt={`Video Thumbnail ${index + 1}`}
               className="w-full h-full object-cover"
+              fill
               onError={e => {
                 // Use public fallback. E.g. /fallback-thumbnail.jpg (put this in /public)
                 e.target.src = '/fallback-thumbnail.jpg';
