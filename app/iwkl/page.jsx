@@ -12,27 +12,27 @@ const tvCategories = {
   'Best Raids & Tackles of the Season': [
     { 
       video: '/assets/video/vid1.mp4',
-      thumbnail: '/assets/video/thumb1.jpg'
+      thumbnail: '/assets/video/thumb1.JPG'
     },
     { 
       video: '/assets/video/vid2.mp4',
-      thumbnail: '/assets/video/thumb1.jpg'
+      thumbnail: '/assets/video/thumb2.JPG'
     },
     { 
       video: '/assets/video/vid3.mp4',
-      thumbnail: '/assets/video/thumb1.jpg'
+      thumbnail: '/assets/video/thumb3.JPG'
     },
     { 
       video: '/assets/video/vid4.mp4',
-      thumbnail: '/assets/video/thumb1.jpg'
+      thumbnail: '/assets/video/thumb4.JPG'
     },
     { 
       video: '/assets/video/vid5.mp4',
-      thumbnail: '/assets/video/thumb1.jpg'
+      thumbnail: '/assets/video/thumb5.JPG'
     },
     { 
       video: '/assets/video/vid6.mp4',
-      thumbnail: '/assets/video/thumb1.jpg'
+      thumbnail: '/assets/video/thumb6.JPG'
     },
   ],
 };
@@ -242,7 +242,7 @@ const Page = () => {
             <h1 className="text-4xl sm:text-4xl md:text-5xl font-[Koba] text-black-90 mb-6 md:mb-8">
               Your Official Kabaddi Streaming Hub
             </h1>
-            <p className="text-base sm:text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed font-sub">
+            <p className="text-base sm:text-lg text-white max-w-3xl mx-auto leading-relaxed font-sub">
               Dive into the world of professional kabaddi with IWKL TV. Watch live matches, exclusive 
               interviews, behind-the-scenes content, and the most thrilling moments from the season.
             </p>
@@ -251,7 +251,7 @@ const Page = () => {
       </section>
 
       {/* Video Grid */}
-      <section className="pt-8 pb-24 bg-white min-h-[60vh]">
+      <section className="pt-8 pb-24 min-h-[60vh]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {isLoading ? (
             <SkeletonGrid />
