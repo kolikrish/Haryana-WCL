@@ -17,7 +17,7 @@ const Hero = () => {
   return (
     <div>
 
-      <BannerComponent title={"About"}/>
+      <BannerComponent title={"About Us"}/>
 
     {/* <ComingSoon title={"About Page Comming Soon."}/> */}
 

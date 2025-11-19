@@ -5,10 +5,10 @@ import Image from "next/image";
 
 const Journey = () => {
   return (
-    <section className="relative w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-[#f1f1f1]">
+    <section className="relative mt-10 w-full min-h-[35vh] md:min-h-[85vh] flex flex-col bg-[#2F0834]">
       {/* Headline - Responsive spacing and font size */}
       <div className="w-full text-center mt-8 md:mt-14 md:mb-6 z-10 px-4 mb-4">
-        <h1 className="text-4xl sm:text-3xl md:text-5xl font-[Koba] md:font-medium text-black drop-shadow-lg">
+        <h1 className="text-4xl md:text-6xl font-[Koba] md:font-medium text-white drop-shadow-lg">
             The Journey Begins
         </h1>
       </div>

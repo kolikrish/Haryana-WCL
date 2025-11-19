@@ -8,7 +8,7 @@ import { Navigation, Pagination, Autoplay } from "swiper/modules";
 const BannerComponent = ({title}) => {
   return (
     <div>
-            <section className="relative w-full overflow-hidden h-[25vh] lg:h-[60vh]">
+            <section className="relative w-full overflow-hidden h-[20vh] lg:h-[50vh]">
       {/* Background Image Carousel */}
       <div className="absolute inset-0 w-full h-full z-0">
         <Swiper
@@ -36,7 +36,7 @@ const BannerComponent = ({title}) => {
               <div className="absolute inset-0 bg-black/20 z-5 pointer-events-none" />
               {/* Headline overlay */}
               <div className="absolute inset-0 flex items-center justify-center z-10">
-                <h1 className="text-4xl md:text-6xl font-[Koba] text-white drop-shadow-lg bg-opacity-30 px-8 py-3 rounded">
+                <h1 className="text-5xl md:text-7xl font-[Koba] text-white drop-shadow-lg bg-opacity-30 px-8 py-3 rounded">
                   {title ||"Matches"}
                 </h1>
               </div>

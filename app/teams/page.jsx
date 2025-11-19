@@ -16,7 +16,7 @@ const page = () => {
   return (
     <div>
 
-      <BannerComponent title={"Team"}/>
+      <BannerComponent title={"Teams"}/>
 
     <ComingSoon />
 

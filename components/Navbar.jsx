@@ -36,15 +36,15 @@ const Navbar = () => {
         </Link>
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex gap-8 text-sm font-medium tracking-wide">
+        <ul className="hidden md:flex gap-8 text-2xl font-[koba] tracking-wide">
           <li>
             <Link href="/about" className="hover:text-gray-300 cursor-pointer">
               ABOUT US
             </Link>
           </li>
           <li>
-            <Link href="/team" className="hover:text-gray-300 cursor-pointer">
-              TEAM
+            <Link href="/teams" className="hover:text-gray-300 cursor-pointer">
+              TEAMS
             </Link>
           </li>
           <li>
@@ -59,7 +59,7 @@ const Navbar = () => {
           </li>
           <li>
             <Link href="/iwkl" className="hover:text-gray-300 cursor-pointer">
-              IWKLTV
+              IWKL TV
             </Link>
           </li>
           <li>
@@ -90,12 +90,12 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {open && (
-        <div className="md:hidden bg-[#510043] px-6 py-4 space-y-4 text-sm font-medium tracking-wide">
+        <div className="md:hidden absolute w-full min-h-screen z-50 bg-[#300834] px-6 font-[koba] py-4 space-y-6 text-center text-2xl tracking-wide">
           <Link href="/about" className="block hover:text-gray-300">ABOUT US</Link>
           <Link href="/team" className="block hover:text-gray-300">TEAM</Link>
           <Link href="/matches" className="block hover:text-gray-300">MATCHES</Link>
           <Link href="/gallery" className="block hover:text-gray-300">GALLERY</Link>
-          <Link href="/iwkl" className="block hover:text-gray-300">IWKLTV</Link>
+          <Link href="/iwkl" className="block hover:text-gray-300">IWKL TV</Link>
           <Link href="/stats" className="block hover:text-gray-300">STATS</Link>
           <Link href="/news" className="block hover:text-gray-300">NEWS</Link>
           <Link href="/franchise" className="block hover:text-gray-300">FRANCHISE</Link>
