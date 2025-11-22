@@ -37,6 +37,19 @@ const Hero = () => {
           <SwiperSlide className="relative w-full h-full">
             <div className="relative w-full h-full">
               <Image
+                src="/assets/HeroBanner3.jpg"
+                alt="Banner 1"
+                fill
+                className="object-cover"
+                priority
+                sizes="100vw"
+              />
+            </div>
+          </SwiperSlide>
+
+          <SwiperSlide className="relative w-full h-full">
+            <div className="relative w-full h-full">
+              <Image
                 src="/assets/HeroBanner1.jpg"
                 alt="Banner 1"
                 fill
